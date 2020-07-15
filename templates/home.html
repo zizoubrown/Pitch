@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% if title %}
+        <title>Pitch - {{ title }} </title>
+    {% else %}
+        <title>Pitch</title>
+    {% endif %}
 </head>
 <body>
     {% for pitch in pitches %}
