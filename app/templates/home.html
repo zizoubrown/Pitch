@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% for pitch in pitches %}
+    {% for post in posts %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' +  post.author.image_file ) }}">
             <div class="media-body">
